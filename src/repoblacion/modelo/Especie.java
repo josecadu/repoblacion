@@ -19,6 +19,9 @@ PINO("pino piñonero"),ROBLE("roble mediterráneo"),OLIVO("olivo");
 		this.cadenaAMostrar = cadenaAMostrar;
 		
 	}
-	
+	@Override
+	public String toString() {
+		return cadenaAMostrar;
+	}
 }
 
