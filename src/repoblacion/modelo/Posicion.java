@@ -34,10 +34,10 @@ private void setY(double y) {
 public double distancia(Posicion posicion) {
 	
 	if (posicion==null)
-		throw new NullPointerException("ERROR: la posicion no puede ser nula");
+		throw new NullPointerException("ERROR: No se puede calcular la distancia a una posición nula.");
 	else
 	 
-	return Math.sqrt(Math.pow(posicion.getX(), this.x) + Math.pow(posicion.getY(), this.y)) ;
+	return Math.sqrt(Math.pow(posicion.getX(), -this.x) + Math.pow(posicion.getY(), -this.y)) ;
 }
 
 @Override

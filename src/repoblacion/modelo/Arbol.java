@@ -10,7 +10,7 @@ setEspecie(especie);
 }
 public Arbol (Arbol a) {
 	if (a ==null)
-		throw new NullPointerException();
+		throw new NullPointerException("ERROR: No se puede copiar un árbol nulo.");
 			
 	setPosicion(a.getPosicion());
 	setEspecie(a.getEspecie());
