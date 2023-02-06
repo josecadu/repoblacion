@@ -2,8 +2,8 @@ package repoblacion.modelo;
 
 
 public class Posicion {
-private double x;
-private double y;
+private double x=0;
+private double y=0;
 
 public Posicion (double x, double y) {
 	setX(x);
@@ -31,13 +31,13 @@ public double getY() {
 private void setY(double y) {
 	this.y = y;
 }
-public double distancia(Posicion posicion) {
+public static double distancia(Posicion posicion) {
 	
 	if (posicion==null)
 		throw new NullPointerException("ERROR: No se puede calcular la distancia a una posición nula.");
 	else
 	 
-	return Math.sqrt(Math.pow(posicion.getX(), -this.x) + Math.pow(posicion.getY(), -this.y)) ;
+	return Math.sqrt(Math.pow((posicion.getX() -0),2) + Math.pow(posicion.getY() -0,2)) ;
 }
 
 @Override
